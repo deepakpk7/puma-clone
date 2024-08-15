@@ -1,0 +1,30 @@
+.navbar {
+    background-color: black; 
+}
+.nav-link {
+    color: #fff !important;
+}
+
+.navbar-brand img {
+    filter: invert(1); 
+}
+
+.form-control {
+    border-radius: 0;
+}
+
+.btn-outline-light {
+    border-radius: 0;
+}
+
+.nav-item i {
+    font-size: 1.2rem;
+}
+
+.navbar-toggler {
+    border-color: rgba(255, 255, 255, 0.1);
+}
+
+.navbar-toggler-icon {
+    background-image: url('data:image/svg+xml;charset=utf8,%3Csvg xmlns%3D"http://www.w3.org/2000/svg" viewBox%3D"0 0 30 30"%3E%3Cpath stroke%3D"rgba%28255, 255, 255, 0.5%29" stroke-width%3D"2" stroke-linecap%3D"round" stroke-miterlimit%3D"10" d%3D"M4 7h22M4 15h22M4 23h22"/%3E%3C/svg%3E');
+}
