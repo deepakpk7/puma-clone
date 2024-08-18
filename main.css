@@ -1,8 +1,24 @@
+body {
+    /* font-family: Arial, sans-serif; */
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+}
 .navbar {
     background-color: black; 
 }
 .nav-link {
     color: #fff !important;
+}
+/* Navbar Hover Effect */
+.navbar-nav .nav-link {
+    font-size: 1rem; 
+    transition: all 0.3s ease; 
+}
+
+.navbar-nav .nav-link:hover {
+    text-decoration: underline; 
+    font-size: 1.1rem; 
 }
 
 .navbar-brand img {
@@ -27,4 +43,79 @@
 
 .navbar-toggler-icon {
     background-image: url('data:image/svg+xml;charset=utf8,%3Csvg xmlns%3D"http://www.w3.org/2000/svg" viewBox%3D"0 0 30 30"%3E%3Cpath stroke%3D"rgba%28255, 255, 255, 0.5%29" stroke-width%3D"2" stroke-linecap%3D"round" stroke-miterlimit%3D"10" d%3D"M4 7h22M4 15h22M4 23h22"/%3E%3C/svg%3E');
+}
+
+.main {
+    position: relative;
+    text-align: center;
+}
+.main h3{
+    position: absolute;
+    font-weight: bold;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.banner-image {
+    width: 100%;
+    height: 600px;
+    max-height: 600px; 
+    object-fit: cover;
+}
+
+.btn-container {
+    position: absolute;
+    top: 93%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    gap: 15px;
+}
+
+.btn-container .btn {
+    padding: 10px 20px;
+    font-size: 1.2em;
+    background-color: white;
+    color: black;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-container .btn:hover {
+    background-color: #000000;
+    color: white;
+}
+
+@media (max-width: 768px) {
+    .banner-image {
+        height: 400px;
+    }
+
+    .btn-container {
+        flex-direction: column;
+        top: 70%; /* Adjusting the top position for smaller screens */
+    }
+
+    .btn-container .btn {
+        width: 100%;
+        margin-bottom: 10px;
+        font-size: 1em;
+    }
+}
+
+@media (max-width: 480px) {
+    .banner-image {
+        height: 300px;
+    }
+
+    .btn-container {
+        top: 60%;
+        gap: 10px;
+    }
+
+    .btn-container .btn {
+        align-items: center;
+        padding: 8px 16px;
+        font-size: 0.9em;
+    }
 }
