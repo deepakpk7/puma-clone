@@ -45,6 +45,7 @@ body {
     background-image: url('data:image/svg+xml;charset=utf8,%3Csvg xmlns%3D"http://www.w3.org/2000/svg" viewBox%3D"0 0 30 30"%3E%3Cpath stroke%3D"rgba%28255, 255, 255, 0.5%29" stroke-width%3D"2" stroke-linecap%3D"round" stroke-miterlimit%3D"10" d%3D"M4 7h22M4 15h22M4 23h22"/%3E%3C/svg%3E');
 }
 
+
 .main {
     position: relative;
     text-align: center;
@@ -115,7 +116,103 @@ body {
     height: auto;
     border-radius: 10px;
 }
+.hero-section {
+    background-image: url('../puma-clone/image/div-3.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 100px 0;
+    height: 500px;
+}
+.hero-section p {
+    margin-bottom: 1.5rem;
+}
 
+.hero-section .btn {
+    margin-right: 15px;
+}
+.carousel-item img {
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
+
+.carousel-caption {
+    bottom: 0;
+    background: rgba(255, 255, 255, 0.8);
+    color: #000;
+    padding: 15px;
+    width: 100%;
+    text-align: center;
+}
+
+.carousel-caption h5 {
+    font-size: 1rem;
+}
+
+.carousel-caption p {
+    font-size: 0.9rem;
+}
+
+
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: #000;
+    border-radius: 50%;
+}
+
+.product-card {
+    /* text-align: center;
+    padding: 15px; */
+}
+
+.product-card img {
+    width: 100%;
+    height: auto;
+    max-height: 200px;
+    object-fit: contain;
+}
+
+.product-name {
+    font-size: 1rem;
+    margin: 10px 0 5px 0;
+    color: white;
+}
+
+.product-price {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: white;
+}
+@media (max-width: 768px) {
+    .hero-section h1 {
+        font-size: 2rem;
+    }
+
+    .hero-section h2 {
+        font-size: 1.2rem;
+    }
+
+    .hero-section .btn {
+        margin-right: 0;
+        margin-bottom: 10px;
+        width: 100%;
+    }
+}
+.carousel-item img {
+    max-width: 100%;
+    height: auto;
+}
+
+@media (max-width: 768px) {
+    .carousel-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        scrollbar-width: 100px;
+    }
+}
 
 @media (max-width: 768px) {
     .banner-image {
@@ -124,7 +221,7 @@ body {
 
     .btn-container {
         flex-direction: column;
-        top: 70%; /* Adjusting the top position for smaller screens */
+        top: 70%; 
     }
 
     .btn-container .btn {
