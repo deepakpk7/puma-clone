@@ -164,8 +164,8 @@ body {
 }
 
 .product-card {
-    /* text-align: center;
-    padding: 15px; */
+    text-align: center;
+    padding: 15px;
 }
 
 .product-card img {
@@ -179,6 +179,7 @@ body {
     font-size: 1rem;
     margin: 10px 0 5px 0;
     color: white;
+    text-align: center;
 }
 
 .product-price {
@@ -239,6 +240,7 @@ body {
     color: white;
 }
 /*End Card Section */
+
 /* Footer */
 footer{
     font-family: FFDINforPuma, Inter, -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
