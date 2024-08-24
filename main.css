@@ -256,11 +256,13 @@ footer{
     footer  a:hover{
     color: white;
     }
+    footer svg:hover{
+        color: white;
+    }
     footer img{
     padding: 5px;
     margin-bottom: 5px;
     }
-
 /* End Footer */
 
 @media (max-width: 768px) {
